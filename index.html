@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home for Sale</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-nav" id="navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="#"><i class="bi bi-house-door-fill text-primary"></i>HomiQ</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#properties">Properties</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                        <a href="#contact" class="btn btn-primary rounded-pill px-4 shadow-sm">Contact Agent</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero-section d-flex align-items-center">
+        <div class="hero-overlay"></div>
+        <div class="container text-center text-white hero-content">
+            <span class="badge bg-primary text-uppercase px-3 py-2 rounded-pill mb-3 animate-slide-up">Premium Real Estate</span>
+            <h1 class="display-3 fw-bold mb-4 animate-slide-up delay-1 text-shadow">Find Your Perfect Home For Sale</h1>
+            <p class="lead mb-5 fs-4 animate-slide-up delay-2 text-shadow-sm">Discover the most beautiful properties available in prime locations.</p>
+            
+            <div class="search-box bg-white p-2 rounded-pill shadow-lg d-flex justify-content-between align-items-center animate-slide-up delay-3 mx-auto">
+                <div class="input-group">
+                    <span class="input-group-text bg-transparent border-0 ps-4"><i class="bi bi-search text-muted"></i></span>
+                    <input type="text" class="form-control border-0 shadow-none" placeholder="Search by city, neighborhood, or ZIP..." aria-label="Search">
+                    <button class="btn btn-primary rounded-pill px-4 py-2 ms-2 fw-semibold">Search Properties</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Fast Facts / Stats -->
+    <section class="stats-section bg-white py-4 shadow-sm position-relative z-1 mb-5">
+        <div class="container">
+            <div class="row text-center gy-4">
+                <div class="col-md-3 col-6">
+                    <h2 class="fw-bold text-primary mb-0">15k+</h2>
+                    <p class="text-muted mb-0">Properties Listed</p>
+                </div>
+                <div class="col-md-3 col-6">
+                    <h2 class="fw-bold text-primary mb-0">10k+</h2>
+                    <p class="text-muted mb-0">Happy Clients</p>
+                </div>
+                <div class="col-md-3 col-6">
+                    <h2 class="fw-bold text-primary mb-0">500+</h2>
+                    <p class="text-muted mb-0">Expert Agents</p>
+                </div>
+                <div class="col-md-3 col-6">
+                    <h2 class="fw-bold text-primary mb-0">20+</h2>
+                    <p class="text-muted mb-0">Years Experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Properties -->
+    <section id="properties" class="py-5 bg-light">
+        <div class="container my-5">
+            <div class="d-flex justify-content-between align-items-end mb-5">
+                <div>
+                    <h6 class="text-primary fw-bold text-uppercase tracking-wider">Our Listings</h6>
+                    <h2 class="fw-bold display-5 mb-0">Featured Properties</h2>
+                </div>
+                <a href="#" class="btn btn-outline-dark rounded-pill px-4 d-none d-md-inline-block">View All</a>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Property 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card property-card h-100 border-0 rounded-4 overflow-hidden">
+                        <div class="position-relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80" class="card-img-top property-img" alt="Modern Villa">
+                            <div class="position-absolute top-0 end-0 m-3 d-flex flex-column gap-2">
+                                <span class="badge bg-primary px-3 py-2 rounded-pill shadow-sm">For Sale</span>
+                            </div>
+                            <div class="property-price-tag position-absolute bottom-0 start-0 m-3 bg-white text-dark px-4 py-2 rounded-pill fw-bold shadow">
+                                $850,000
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <p class="text-muted mb-2"><i class="bi bi-geo-alt text-primary me-1"></i> Beverly Hills, CA 90210</p>
+                            <h5 class="card-title fw-bold mb-3 fs-4 text-truncate">Modern Luxury Villa</h5>
+                            <div class="d-flex justify-content-between text-muted mb-4 border-bottom pb-4">
+                                <span class="d-flex align-items-center gap-2"><i class="bi bi-arrows-fullscreen fs-5"></i> 3,500 sqft</span>
+                                <span class="d-flex align-items-center gap-2"><i class="bi bi-door-open fs-5"></i> 4 Beds</span>
+                                <span class="d-flex align-items-center gap-2"><i class="bi bi-droplet fs-5"></i> 3 Baths</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center gap-2">
+                                    <div class="agent-avatar border border-2 border-primary rounded-circle overflow-hidden" style="width: 35px; height: 35px;">
+                                        <img src="https://i.pravatar.cc/100?img=11" alt="Agent" class="w-100 h-100 object-fit-cover">
+                                    </div>
+                                    <span class="fs-6 fw-medium text-dark">Jane Doe</span>
+                                </div>
+                                <a href="#" class="btn btn-light rounded-circle p-2 text-primary hover-primary"><i class="bi bi-arrow-right fs-5"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card property-card h-100 border-0 rounded-4 overflow-hidden">
+                        <div class="position-relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80" class="card-img-top property-img" alt="Family Home">
+                            <div class="position-absolute top-0 end-0 m-3 d-flex flex-column gap-2">
+                                <span class="badge bg-success px-3 py-2 rounded-pill shadow-sm">New Build</span>
+                            </div>
+                            <div class="property-price-tag position-absolute bottom-0 start-0 m-3 bg-white text-dark px-4 py-2 rounded-pill fw-bold shadow">
+                                $520,000
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <p class="text-muted mb-2"><i class="bi bi-geo-alt text-primary me-1"></i> Austin, TX 78701</p>
+                            <h5 class="card-title fw-bold mb-3 fs-4 text-truncate">Spacious Family Home</h5>
+                            <div class="d-flex justify-content-between text-muted mb-4 border-bottom pb-4">
+                                <span class="d-flex align-items-center gap-2"><i class="bi bi-arrows-fullscreen fs-5"></i> 2,800 sqft</span>
+                                <span class="d-flex align-items-center gap-2"><i class="bi bi-door-open fs-5"></i> 3 Beds</span>
+                                <span class="d-flex align-items-center gap-2"><i class="bi bi-droplet fs-5"></i> 2.5 Baths</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center gap-2">
+                                    <div class="agent-avatar border border-2 border-primary rounded-circle overflow-hidden" style="width: 35px; height: 35px;">
+                                        <img src="https://i.pravatar.cc/100?img=33" alt="Agent" class="w-100 h-100 object-fit-cover">
+                                    </div>
+                                    <span class="fs-6 fw-medium text-dark">John Smith</span>
+                                </div>
+                                <a href="#" class="btn btn-light rounded-circle p-2 text-primary hover-primary"><i class="bi bi-arrow-right fs-5"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card property-card h-100 border-0 rounded-4 overflow-hidden">
+                        <div class="position-relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1513584684374-8bab748fbf90?auto=format&fit=crop&w=800&q=80" class="card-img-top property-img" alt="Urban Apartment">
+                            <div class="position-absolute top-0 end-0 m-3 d-flex flex-column gap-2">
+                                <span class="badge bg-warning text-dark px-3 py-2 rounded-pill shadow-sm">Hot Deal</span>
+                            </div>
+                            <div class="property-price-tag position-absolute bottom-0 start-0 m-3 bg-white text-dark px-4 py-2 rounded-pill fw-bold shadow">
+                                $410,000
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <p class="text-muted mb-2"><i class="bi bi-geo-alt text-primary me-1"></i> New York, NY 10001</p>
+                            <h5 class="card-title fw-bold mb-3 fs-4 text-truncate">Urban Luxury Apartment</h5>
+                            <div class="d-flex justify-content-between text-muted mb-4 border-bottom pb-4">
+                                <span class="d-flex align-items-center gap-2"><i class="bi bi-arrows-fullscreen fs-5"></i> 1,500 sqft</span>
+                                <span class="d-flex align-items-center gap-2"><i class="bi bi-door-open fs-5"></i> 2 Beds</span>
+                                <span class="d-flex align-items-center gap-2"><i class="bi bi-droplet fs-5"></i> 2 Baths</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center gap-2">
+                                    <div class="agent-avatar border border-2 border-primary rounded-circle overflow-hidden" style="width: 35px; height: 35px;">
+                                        <img src="https://i.pravatar.cc/100?img=47" alt="Agent" class="w-100 h-100 object-fit-cover">
+                                    </div>
+                                    <span class="fs-6 fw-medium text-dark">Sarah Lee</span>
+                                </div>
+                                <a href="#" class="btn btn-light rounded-circle p-2 text-primary hover-primary"><i class="bi bi-arrow-right fs-5"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5 d-block d-md-none">
+                <a href="#" class="btn btn-outline-dark rounded-pill px-5 py-3 shadow-sm w-100">View All Properties</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-white">
+        <div class="container py-5">
+            <div class="row align-items-center gx-5">
+                <div class="col-lg-6 mb-5 mb-lg-0 relative">
+                    <div class="about-img-wrapper position-relative">
+                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80" alt="About Us" class="img-fluid rounded-4 shadow-lg position-relative z-1">
+                        <div class="about-img-bg position-absolute bg-primary rounded-4 w-100 h-100 top-0 start-0 z-0" style="transform: translate(-20px, 20px);"></div>
+                        
+                        <div class="experience-badge position-absolute bg-white rounded-4 shadow-lg p-3 text-center z-2 d-flex align-items-center gap-3">
+                            <div class="bg-primary-light text-primary rounded-circle d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                                <i class="bi bi-award fs-2"></i>
+                            </div>
+                            <div class="text-start">
+                                <h3 class="fw-bold mb-0">20+</h3>
+                                <p class="text-muted mb-0 lh-1 small">Years of<br>Experience</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 ps-lg-5">
+                    <h6 class="text-primary fw-bold text-uppercase tracking-wider">About Us</h6>
+                    <h2 class="fw-bold display-5 mb-4">We Help You Find Your Dream Home</h2>
+                    <p class="text-muted fs-5 mb-4">With over two decades of real estate expertise, we pride ourselves on delivering outstanding service, localized market knowledge, and an unwavering commitment to our clients.</p>
+                    
+                    <ul class="list-unstyled mb-5">
+                        <li class="d-flex align-items-center mb-3">
+                            <div class="me-3 bg-primary text-white rounded-circle d-flex align-items-center justify-content-center shadow-sm" style="width: 30px; height: 30px;">
+                                <i class="bi bi-check fs-5"></i>
+                            </div>
+                            <span class="fs-5 text-dark fw-medium">Premium properties in prime locations</span>
+                        </li>
+                        <li class="d-flex align-items-center mb-3">
+                            <div class="me-3 bg-primary text-white rounded-circle d-flex align-items-center justify-content-center shadow-sm" style="width: 30px; height: 30px;">
+                                <i class="bi bi-check fs-5"></i>
+                            </div>
+                            <span class="fs-5 text-dark fw-medium">Expert negotiation & market analysis</span>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <div class="me-3 bg-primary text-white rounded-circle d-flex align-items-center justify-content-center shadow-sm" style="width: 30px; height: 30px;">
+                                <i class="bi bi-check fs-5"></i>
+                            </div>
+                            <span class="fs-5 text-dark fw-medium">Seamless buying & selling process</span>
+                        </li>
+                    </ul>
+                    
+                    <a href="#contact" class="btn btn-primary rounded-pill px-5 py-3 shadow-lg hover-scale">Learn More About Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Newsletter -->
+    <section id="contact" class="py-5 position-relative overflow-hidden contact-section">
+        <div class="container py-5 z-index-1 position-relative">
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-white mb-5 mb-lg-0 pe-lg-5">
+                    <h2 class="display-4 fw-bold mb-3 text-shadow-sm">Ready to buy your dream home?</h2>
+                    <p class="lead mb-4 opacity-75">Contact our expert agents today or join our newsletter to get updates on the latest listings directly to your inbox.</p>
+                    <div class="d-flex gap-3 mb-4">
+                        <div class="bg-white bg-opacity-10 p-3 rounded-4 backdrop-blur d-flex align-items-center gap-3">
+                            <i class="bi bi-telephone-fill fs-3"></i>
+                            <div>
+                                <p class="mb-0 fs-6 opacity-75">Call Us Now</p>
+                                <h5 class="mb-0 fw-bold">+91 8015902474</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card bg-white border-0 rounded-4 shadow-lg p-4 p-md-5">
+                        <h4 class="fw-bold mb-4">Send Us A Message</h4>
+                        <form action="https://formsubmit.co/suresh8015902474@gmail.com" method="POST">
+                            <!-- Disable captchas for smoother experience -->
+                            <input type="hidden" name="_captcha" value="false">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <input type="text" name="name" class="form-control bg-light border-0 py-3 rounded-3" placeholder="Your Name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" name="email" class="form-control bg-light border-0 py-3 rounded-3" placeholder="Your Email" required>
+                                </div>
+                                <div class="col-12">
+                                    <input type="tel" name="phone" class="form-control bg-light border-0 py-3 rounded-3" placeholder="Phone Number">
+                                </div>
+                                <div class="col-12">
+                                    <textarea name="message" class="form-control bg-light border-0 py-3 rounded-3" rows="4" placeholder="How can we help you find a home?" required></textarea>
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <button type="submit" class="btn btn-primary w-100 py-3 rounded-pill fw-bold fs-5 shadow-sm hover-scale">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Decorative shapes -->
+        <div class="bg-shape-1 position-absolute w-100 h-100 top-0 start-0 opacity-25 object-fit-cover" style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-3">
+        <div class="container py-4">
+            <div class="row gy-4 mb-5">
+                <div class="col-lg-4 col-md-6">
+                    <a href="#" class="text-white text-decoration-none d-flex align-items-center gap-2 mb-4">
+                        <i class="bi bi-house-door-fill text-primary fs-2"></i>
+                        <span class="fs-3 fw-bold">HomiQ</span>
+                    </a>
+                    <p class="text-secondary pe-lg-4 mb-4">We provide the best curated properties on the market. Trust our experienced agents to help you navigate the real estate market and find your perfect home.</p>
+                    <div class="d-flex gap-2">
+                        <a href="#" class="btn btn-outline-secondary border-0 bg-white bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center footer-social" style="width: 40px; height: 40px;"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="btn btn-outline-secondary border-0 bg-white bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center footer-social" style="width: 40px; height: 40px;"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="btn btn-outline-secondary border-0 bg-white bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center footer-social" style="width: 40px; height: 40px;"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="btn btn-outline-secondary border-0 bg-white bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center footer-social" style="width: 40px; height: 40px;"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mt-4 mt-lg-0">
+                    <h5 class="fw-bold mb-4 text-white">Quick Links</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
+                        <li><a href="#home" class="text-secondary text-decoration-none footer-link">Home</a></li>
+                        <li><a href="#properties" class="text-secondary text-decoration-none footer-link">Properties For Sale</a></li>
+                        <li><a href="#about" class="text-secondary text-decoration-none footer-link">About Us</a></li>
+                        <li><a href="#contact" class="text-secondary text-decoration-none footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+                    <h5 class="fw-bold mb-4 text-white">Property Types</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
+                        <li><a href="#" class="text-secondary text-decoration-none footer-link">Modern Villas</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none footer-link">Family Homes</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none footer-link">Urban Apartments</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none footer-link">Luxury Estates</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+                    <h5 class="fw-bold mb-4 text-white">Contact Info</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-3 mb-0 text-secondary">
+                        <li class="d-flex align-items-start gap-3">
+                            <i class="bi bi-geo-alt-fill text-primary mt-1"></i>
+                            <span>123 Real Estate Blvd, Suite 200<br>New York, NY 10012</span>
+                        </li>
+                        <li class="d-flex align-items-center gap-3">
+                            <i class="bi bi-envelope-fill text-primary"></i>
+                            <a href="mailto:info@dreamhomes.com" class="text-secondary text-decoration-none footer-link">info@dreamhomes.com</a>
+                        </li>
+                        <li class="d-flex align-items-center gap-3">
+                            <i class="bi bi-telephone-fill text-primary"></i>
+                            <span>+1 234 567 890</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="border-secondary opacity-50 mb-4">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0 text-secondary">
+                    <p class="mb-0">Copyright © 2026 HomiQ. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-secondary text-decoration-none footer-link me-3">Privacy Policy</a>
+                    <a href="#" class="text-secondary text-decoration-none footer-link">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
